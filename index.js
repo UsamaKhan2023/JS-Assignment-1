@@ -1,102 +1,46 @@
-// 1
-// 1 2 
-// 1 2 3
-// 1 2 3 4 
-// 1 2 3 4 5 
-let num = 5;
-for(let r=1;r<=num;r++)
+console.log("Welcome");
+//1.Question add two number
+// let a=2;
+// let b=5;
+// console.log(a+b);
+function myFunction(a,b)
 {
-    let pattern = "";
-    for(let c=1;c<=r;c++)
-    {
-        pattern+= c+ "";
-    }
-   console.log(pattern);
-    
+return a+b;
 }
-// Q1
-// *
-// * *
-// * * *
-// * * * *
-// * * * * *
-
-num = 10;
-for(let r=1;r<=num;r++)
-{
-    let pattern = "";
-    for(let c=1;c<=r;c++)
-    {
-        pattern+= "* "+"";
-    }
-   console.log(pattern);
-    
-}
-
-// Q2. Iterate through all numbers from 1 to 45. Print the following:
-
-//    For multiples of 3 print “Fizz”
-//    For multiples of 5 print “Buzz”
-//    For multiples of 3 and 5 print “FizzBuzz”
-
-
-for(let i =1; i<=45 ; i++)
-{
-    if(i%3==0 && i%5!=0)
-    {
-        console.log("Fizz");
-    }
-    else if(i%5==0 && i%3!=0)
-    {
-        console.log("Buzz");
-    }
-    else if(i%3==0 && i%5==0)
-        {
-            console.log("FizzBuzz");
-        }
-}
-
-//Q3. Calculate the sum of all the numbers in the following array
-
-//var numbersArray = [1,13,22,123,49]
-var arr = [1,13,22,123,49];
-let sum = 0
-for(let i=0;i<5;i++){
-    sum=sum+arr[i];
-}
-console.log(sum);
-
-//Q4.Get the sum of two arrays…actually the sum of all their elements.
-//P.S. Each array includes only integer numbers. Output is a number too.
-
-//let arr_1 = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2]; 
-//let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26]; // 
-
- //Example output: 
- //276 + 351 = 627
-
- let arr_1 = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2];
- let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26];
- let sum1 = 0;
- let sum2 = 0;
- for(let i=0;i<arr_1.length;i++)
- {
-    sum1=sum1+arr_1[i];
- }
- for(let i=0;i<arr_1.length;i++)
-{
-    sum2=sum2+arr_2[i];
-}
-console.log(sum1+sum2);
-
-//Q5.Using a for loop output the elements in reverse order
-
-//let arr = [43, "what", 9, true, "cannot", false, "be", 3, true];
-//Example output: 
-//true 3.5  be  false cannot  true 9 what 43 OR each item   on a new line
-
-let array = [43, "what", 9, true, "cannot", false, "be", 3, true];
-for(let i=array.length;i>0;i--)
-{
-    console.log(array[i]);
-}
+let x=myFunction(2,5);
+console.log(x);
+//2.Question Find if the conditions are obeyed or not? 
+let A1=5;
+let B1=3;
+console.log(A1<10 && A1>B1)
+//3.Question Check the conditions
+let a=10;
+let b=20;
+console.log(a%10==0 && b%10==0);
+console.log(a%10!=0 && b%10!=0);
+a=12;
+console.log(a%10==0 || b%10==0);
+//4.Find the first digit of a 4 digit number
+let num=4567;
+let res=Math.floor(num/1000);
+console.log(res);
+//5. Question Find the last digit of a 4 digit number
+let num1=4567;
+let res1=Math.floor(num1%10);
+console.log(res1);
+//6.Question Find the remainder
+let A=2;
+let B=9;
+let res2=Math.floor(B%A);
+console.log(res2);
+//7.Question Multiply two Numbers
+let c=2;
+let d=5;
+console.log(c*5);
+//8.Question Marks Calculator
+let numb=50;
+let numb1=20;
+let numb2=100;
+let sum=numb+numb1+numb2;
+let avg=sum/3;
+console.log(sum+" "+avg.toFixed(2));
